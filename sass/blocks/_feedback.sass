@@ -1,0 +1,84 @@
+.feedback
+  &__container
+    padding-top: 85px
+    padding-bottom: 50px
+    display: flex
+    flex-direction: column
+    align-items: center
+  &__title
+    margin: 0
+    +O(45px)
+    font-weight: bold
+    text-transform: uppercase
+    color: #000
+  &-slider
+    position: relative
+    margin-top: 56px
+    display: flex
+    justify-content: center
+    width: 100%
+  &-swiper
+    max-width: 584px
+    overflow: hidden
+    &__slide
+      display: flex
+      flex-direction: column
+      align-items: center
+      &-name
+        +O(20px)
+        font-weight: 600
+        color: #000
+      &-description
+        margin: 20px 0 0 0
+        width: 100%
+        +O(18px)
+        line-height: 35px
+        color: #000
+        text-align: center
+  &__swiper
+    &-button
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      height: 21px
+      width: 30px
+      cursor: pointer
+      &--prev
+        left: 144px
+        &::before
+          left: 0
+          transform: rotate(-45deg)
+        &::after
+          left: 0
+          transform: rotate(45deg)
+      &--next
+        right: 144px
+        &::before
+          right: 0
+          transform: rotate(45deg)
+        &::after
+          right: 0
+          transform: rotate(-45deg)
+      &::before
+        content: ''
+        position: absolute
+        top: 0
+        width: 25px
+        height: 5px
+        border-radius: 3px
+        background-color: #6D6E71
+      &::after
+        content: ''
+        position: absolute
+        bottom: 0
+        width: 25px
+        height: 5px
+        border-radius: 3px
+        background-color: #6D6E71
+  &__button
+    position: relative
+    margin-top: 30px
+    +O(18px)
+    font-weight: 300
+    color: #798BF2
+    text-decoration: underline

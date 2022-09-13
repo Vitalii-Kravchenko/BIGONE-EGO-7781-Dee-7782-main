@@ -1,0 +1,188 @@
+.product
+  &__container
+    position: relative
+    padding-top: 115px
+    padding-bottom: 115px
+    display: flex
+    flex-direction: column
+    align-items: center
+    max-width: 1324px
+  &__snow
+    position: absolute
+    top: -163px
+    left: 50.7%
+    transform: translateX(-50%)
+    width: 1936px
+  &-card
+    position: relative
+    margin-top: 40px
+    padding: 45px 40px 40px 40px
+    display: flex
+    width: 100%
+    min-height: 852px
+    background-color: #fff
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25)
+    border-radius: 30px
+    &--margin
+      margin-top: 0
+    &__slider
+      margin-right: 34px
+      display: flex
+      flex-direction: column
+      max-width: 779px
+      width: 100%
+      overflow: hidden
+      &-text
+        +O(20px)
+        font-weight: 600
+        color: #000
+        &--color
+          color: #798BF2
+        &--position
+          position: absolute
+          bottom: 47px
+          left: 42px
+    &__spray
+      margin-right: 34px
+      max-width: 779px
+      width: 100%
+      border-radius: 30px
+      overflow: hidden
+      object-fit: cover
+    &__info
+      display: flex
+      flex-direction: column
+      max-width: 401px
+      width: 100%
+    &__name
+      margin: 1px 0 0 0
+      +O(40px)
+      line-height: 54px
+      font-weight: bold
+      color: #000
+    &__price
+      margin-top: 31px
+      margin-left: 7px
+    &__list
+      margin: 0
+      padding: 0
+      display: flex
+      list-style: none
+      &-wrapper
+        margin-top: 31px
+        display: flex
+        flex-direction: column
+      &-item
+        margin-bottom: 19.3px
+        +O(18px)
+        color: #000
+        &:first-child
+          margin-right: 5px
+          font-weight: 600
+    &__form
+      margin-top: 14px
+      display: flex
+      flex-direction: column
+      width: 100%
+    &__sizes
+      margin-bottom: 20px
+      display: flex
+      justify-content: space-between
+    &__size
+      position: relative
+      width: 60px
+      height: 60px
+      border-radius: 50%
+      background-color: #E8F2F6
+      cursor: pointer
+      transition: background-color 0.7s ease
+      -webkit-tap-highlight-color: transparent
+      &--active
+        background-color: #F8BB98
+        & .product-card__size-number
+          top: 35%
+          color: #fff
+        & .product-card__size-sm
+          opacity: 1
+      &-number
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        +O(20px)
+        font-weight: bold
+        color: #000
+        transition: color 0.2s ease, top 0.7s ease
+        pointer-events: none
+        user-select: none
+      &-sm
+        position: absolute
+        bottom: 10px
+        left: 50%
+        transform: translateX(-50%)
+        +O(15px)
+        color: #fff
+        transition: opacity 0.7s ease
+        opacity: 0
+        pointer-events: none
+        user-select: none
+    &__input
+      padding: 18px 25px 18px 25px
+      width: 100%
+      +O(18px)
+      color: #000
+      border-radius: 100px
+      border: 1px solid #000000
+      transition: border-color 0.3s ease, border-width 0.3s ease
+      &:focus
+        border-width: 3px
+        border-color: #798BF2
+      &::placeholder
+        +O(18px)
+        color: #6D6E71
+      &-wrapper
+        margin-top: 10px
+        width: 100%
+    &__button
+      margin-top: 22px
+      padding: 24px 25px 24px 25px
+    &__description
+      margin: 10px 0 6px 0
+      +O(18px)
+      line-height: 35px
+      color: #000
+    &__photo
+      background-color: #FDFDFD
+      max-height: 524px
+      &-item
+        width: 100%
+        object-fit: contain
+        border-radius: 30px
+        overflow: hidden
+    &__mini
+      margin-top: 20px
+      display: flex
+      justify-content: space-between
+      &-item
+        position: relative
+        display: flex
+        cursor: pointer
+        width: 180px
+        height: 150px
+        border-radius: 30px
+        overflow: hidden
+        background-color: #FDFDFD
+        &::after
+          content: ''
+          position: absolute
+          top: 0
+          left: 0
+          width: 100%
+          height: 100%
+          background-color: #000
+          opacity: 0
+          transition: opacity 0.7s ease
+        & img
+          width: 100%
+          height: 100%
+          object-fit: cover

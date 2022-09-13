@@ -1,0 +1,115 @@
+.about
+  background-image: url('../img/about/background.jpg')
+  background-repeat: no-repeat
+  background-position-x: center
+  background-position-y: 90px
+  background-size: cover
+  &__container
+    position: relative
+    padding-top: 17px
+    padding-bottom: 195px
+    display: flex
+    flex-direction: column
+    align-items: center
+    z-index: 10
+  &-gradient
+    position: absolute
+    top: 90px
+    left: 50%
+    transform: translateX(-50%)
+    width: 100vw
+    background: linear-gradient(180deg, #E8F2F6 30.21%, rgba(236, 244, 247, 0) 100%)
+    height: 440px
+    z-index: 0
+  &__snow
+    &-1
+      position: absolute
+      top: -15px
+      left: 49.2%
+      transform: translateX(-50%)
+      width: 1887px
+    &-2
+      position: absolute
+      bottom: -127px
+      left: 50.3%
+      transform: translateX(-50%)
+      width: 1852px
+  &-cards
+    position: relative
+    display: flex
+    flex-wrap: wrap
+  &-card
+    margin-left: 30px
+    padding: 22px 35px 23px 35px
+    display: flex
+    flex-direction: column
+    align-items: center
+    max-width: 300px
+    width: 100%
+    background-color: #fff
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25)
+    border-radius: 30px
+    &:first-child
+      margin-left: 0
+    &__img
+      width: 90px
+    &__title
+      margin: 12px 0 0 0
+      +O(20px)
+      font-weight: bold
+      color: #F8BB98
+      text-transform: uppercase
+      text-align: center
+    &__description
+      margin: 13px 0 0 0
+      width: 100%
+      +O(18px)
+      line-height: 35px
+      color: #000
+      text-align: center
+  &-info
+    position: relative
+    margin-top: 136px
+    display: flex
+    flex-direction: column
+    align-items: center
+    max-width: 636px
+    width: 100%
+    &__title
+      margin: 0
+      +O(55px)
+      font-weight: bold
+      color: #F8BB98
+      text-transform: uppercase
+      text-align: center
+    &__subtitle
+      margin-top: 36px
+      width: 100%
+      +O(30px)
+      line-height: 50px
+      color: #fff
+      text-align: center
+      &--color
+        font-weight: bold
+        color: #F8BB98
+    &__button
+      margin-top: 31px
+      z-index: 10
+    &__sale
+      margin-top: 22px
+  &__product
+    &-1
+      position: absolute
+      bottom: 0
+      left: -199px
+      width: 710px
+      z-index: 5
+    &-2
+      position: absolute
+      bottom: -36px
+      right: -254px
+      width: 819px
+      z-index: 5
+  &__line
+    bottom: -269px
+    left: 36%
